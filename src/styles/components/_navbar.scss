@@ -1,0 +1,45 @@
+.menu {
+    background-color: $bg-color-menu;
+    min-height: 100vh;
+    width: 15%;
+    min-width: 20rem;
+    max-width: 20rem;
+}
+
+
+.c_logo {
+    background-color: $black;
+    min-height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .link_image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .logo {
+            width: 7rem;
+        }
+    }
+
+
+
+}
+
+.nav {
+    width: 10%;
+    min-width: 15rem;
+    background: $bg-color-menu;
+    display: flex;
+    flex-direction: column;
+
+    .link {
+        text-decoration: none;
+        color: $gray-text;
+        text-transform: uppercase;
+
+    }
+}
