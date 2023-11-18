@@ -13,10 +13,10 @@ function Logo() {
                 className='logo'
 
             />
-            <span>Christopher</span>
+            <span className='logo_name'>Christopher</span>
 
         </a>
-        <span>Frontend Developer</span>
+        <span className='logo_skill'>Frontend Developer</span>
     </div>
   )
 }

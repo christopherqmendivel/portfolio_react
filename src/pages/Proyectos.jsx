@@ -1,3 +1,4 @@
+import transition from "../animations/transition"
 
 function Proyectos() {
   return (
@@ -7,4 +8,4 @@ function Proyectos() {
   )
 }
 
-export default Proyectos
+export default transition(Proyectos);

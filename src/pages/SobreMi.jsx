@@ -1,3 +1,4 @@
+import transition from "../animations/transition"
 
 function SobreMi() {
   return (
@@ -7,4 +8,4 @@ function SobreMi() {
   )
 }
 
-export default SobreMi
+export default transition(SobreMi);

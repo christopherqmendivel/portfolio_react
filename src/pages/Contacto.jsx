@@ -1,3 +1,4 @@
+import transition from "../animations/transition"
 
 function Contacto() {
   return (
@@ -7,4 +8,4 @@ function Contacto() {
   )
 }
 
-export default Contacto
+export default transition(Contacto);
