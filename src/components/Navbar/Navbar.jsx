@@ -58,8 +58,12 @@ function Navbar() {
             </nav>
 
             <div className="social-media">
-                <FontAwesomeIcon icon={faLinkedinIn} className='icon-color' />
-                <FontAwesomeIcon icon={faGithub} className='icon-color' /> 
+                <Link to="https://www.linkedin.com/in/christopherquirozmendivel/" target="_blank">
+                    <FontAwesomeIcon icon={faLinkedinIn} className='icon-color' />
+                </Link>
+                <Link to="https://github.com/christopherqmendivel" target="_blank">
+                    <FontAwesomeIcon icon={faGithub} className='icon-color' /> 
+                </Link>
             </div>
 
         </div>
