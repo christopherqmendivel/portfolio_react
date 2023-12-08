@@ -25,7 +25,7 @@ function Inicio() {
 
         </h1>
 
-        <p className="skill-front">Front End Developer</p>
+        <p className="skill-front">Front End Developer - UX Designer</p>
 
 
         <Link to="/contacto" className="btn btnEnviar slide" id="btnEnviar">
