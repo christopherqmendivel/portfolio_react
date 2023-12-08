@@ -1,4 +1,4 @@
-import logo from '../../assets/other-assets/logov1.png'; 
+import logo from '../../assets/other-assets/logo-chrisv2.png'; 
 
 function Logo() {
   return (

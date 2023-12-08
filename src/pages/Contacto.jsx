@@ -36,7 +36,7 @@ function Contacto() {
           <input type="text" className=" ipt asunto" id="correo" placeholder="asunto" name="asunto" />
           <textarea name="mensaje" className=" ipt form-contacto" placeholder="Mensaje" id="mensaje-textarea" cols="30" rows="10"></textarea>
 
-          <button type="submit" className="btnEnviar slide" id="btnEnviar">Enviar</button>
+          <button type="submit" className="btn btnEnviar slide" id="btnEnviar">Enviar</button>
           <span className="html-tag">
             &lt;/form&gt;
           </span>
