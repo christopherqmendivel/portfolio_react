@@ -1,10 +1,11 @@
 
 // UI SETTINGS
-@import './base/settings';
+@forward './base/globales';
 
 
 
 
 // Componentes
-@import './components/navbar';
-@import './components/layout';
+@forward './components/navbar';
+@forward './components/layout';
+@forward './components/contact';
