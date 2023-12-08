@@ -1,9 +1,12 @@
-import transition from "../animations/transition"
+import transition from "../animations/transition";
+import renderAnimatedSentence from '../helpers/AnimateLetters';
 
 function Proyectos() {
+  const sentence = "Hello Christopher".split("");
+
   return (
-    <div>
-        <h1>Proyectos</h1>
+    <div className="proyect">
+      {renderAnimatedSentence(sentence)}
     </div>
   )
 }

@@ -6,6 +6,7 @@
     margin: 0 auto;
     position: relative;
     width: 100%;
+    justify-content: center;
     .tag-init {
 
         &::after,
@@ -78,6 +79,10 @@
         color: v.$white;
         margin-left: 4rem;
 
+        span {
+            display: inline-block;
+        }
+
         .letter-name {
             display: flex;
             align-items: center;
@@ -126,7 +131,7 @@
 
     .btn {
         margin-left: 4rem;
-        width: 100%;
-        max-width: 20rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
 }

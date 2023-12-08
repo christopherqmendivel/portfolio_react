@@ -1,36 +1,34 @@
 import transition from "../animations/transition";
 import { Link } from 'react-router-dom';
 
+
+import renderAnimatedSentence from '../helpers/AnimateLetters';
 import logo from '../assets/other-assets/logo-chrisv2.png';
 
 
 function Inicio() {
+  const hello = "Hola,".split("");
+  const name =  "Soy Christopher,".split("");
+  const skill = "desarrollador web".split("");
+
   return (
     <div className="home" >
       <span className="tag-init"></span>
       <div className="info">
         <h1 className="title">
-          <span className="html-tag">
-            &lt;h1&gt;
-          </span>
-          <span>Hi</span>
-          <span className="letter-name">
-            Soy
-            <img src={logo}
-              className="logo"
-            />
-            hristopher,
-          </span>
-          <span className="skill">desarrollador web</span>
-          <span className="html-tag">
-            &lt;/h1&gt;
-          </span>
+          {renderAnimatedSentence(hello)}
+          <br />
+          {renderAnimatedSentence(name)}
+          <br />
+          {renderAnimatedSentence(skill)}
+
+
         </h1>
 
         <p className="skill-front">Front End Developer</p>
 
 
-        <Link to="/tu-ruta" className="btn btnEnviar slide" id="btnEnviar">
+        <Link to="/contacto" className="btn btnEnviar slide" id="btnEnviar">
           Contáctame
         </Link>
       </div>
