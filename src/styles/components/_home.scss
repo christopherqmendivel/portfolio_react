@@ -64,7 +64,7 @@
     }
 
     .info {
-        width: 60%;
+        width: 50%;
     }
 
     .logo-main {
@@ -97,6 +97,9 @@
 
         span {
             display: inline-block;
+            &:hover {
+                color: v.$primary-c2;
+            }
         }
 
         .letter-name {
