@@ -5,6 +5,7 @@ import {
   MarkerF,
   useLoadScript,
 } from "@react-google-maps/api";
+
 import logomapa from '../assets/other-assets/logomapa.png';
 
 const darkBlueMapStyles = [
@@ -136,7 +137,7 @@ function Mapa() {
                 icon={{
                   url: logomapa,
                   scaledSize: { width: 50, height: 50 },
-                  anchor: { x: 25, y: 50 }, // Ancla en la parte inferior central
+                  anchor: { x: 25, y: 50 }
                 }}
               >
                 {activeMarker === 1 ? (

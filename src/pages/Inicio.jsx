@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import renderAnimatedSentence from '../helpers/AnimateLetters';
 import logo from '../assets/other-assets/logo-chrisv2.png';
+import coder from '../assets/other-assets/coder.svg'
 
 
 function Inicio() {
@@ -35,7 +36,7 @@ function Inicio() {
 
       <div className="logo-main">
         <img
-          src={logo}
+          src={coder}
           className="logo-home"
           alt="logo christopher"
         />

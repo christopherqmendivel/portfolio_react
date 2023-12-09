@@ -19,3 +19,9 @@
         @content;
     }
 }
+
+@mixin portatil {
+    @media (min-width: 1200px) and (max-height: 660px) {
+        @content;
+    }
+}
