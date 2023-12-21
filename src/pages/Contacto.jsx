@@ -9,7 +9,7 @@ function Contacto() {
   return (
     <div className="contact">
       <div className="contact-info">
-        <h1>
+        <h1 className="title">
           <span className="html-tag">
             &lt;h1&gt;
           </span>

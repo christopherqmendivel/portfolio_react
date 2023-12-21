@@ -1,4 +1,5 @@
 @use './variables' as v;
+@use '../base/mixins' as m;
 
 
 html {
@@ -121,4 +122,14 @@ textarea,
 
 .logo_skill {
   color: v.$white;
+}
+
+
+// MEDIA QUERYS
+
+h1 {
+  font-size: 3.5rem;
+  @include m.tablet {
+    font-size: 7rem;
+  }
 }

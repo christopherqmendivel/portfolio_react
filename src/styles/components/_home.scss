@@ -1,5 +1,5 @@
-@use '../base/variables'as v;
-@use '../base/mixins'as m;
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
 
 .home {
     display: flex;
@@ -8,6 +8,7 @@
     position: relative;
     width: 100%;
     justify-content: center;
+    flex-wrap: wrap;
 
     .tag-init {
 
@@ -64,11 +65,22 @@
     }
 
     .info {
-        width: 50%;
+        width: 100%;
+        padding: 0 2rem;
+
+        @include m.tablet {
+            width: 50%;
+        }
     }
 
     .logo-main {
-        width: 30%;
+        display: none;
+        width: 50%;
+
+        @include m.tablet {
+            width: 30%;
+            display: block;
+        }
 
         .logo-home {
             width: 100%;
@@ -84,19 +96,25 @@
 
         &::before {
             content: '<h1>';
-            top: -2rem;
-            left: 0;
+            top: -2.5rem;
         }
 
         &::after {
             content: '</h1>';
-            display: inline-block;
-            bottom: -0.5rem;
-            padding-left: 1rem;
         }
+
+        @include m.tablet {
+            &::after {
+                display: inline-block;
+                bottom: -0.5rem;
+                padding-left: 1rem;
+            }
+        }
+
 
         span {
             display: inline-block;
+
             &:hover {
                 color: v.$primary-c2;
             }
@@ -188,6 +206,7 @@
             top: .5rem !important;
         }
     }
+
     .info {
         margin-bottom: 5rem;
     }
