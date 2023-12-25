@@ -1,0 +1,10 @@
+.myCanvasContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .myCanvas {
+        width: 70%;
+    }
+}

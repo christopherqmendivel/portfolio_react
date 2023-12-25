@@ -117,6 +117,10 @@
         padding-bottom: 6rem;
         font-size: 3.5rem;
 
+        @include m.tablet {
+            font-size: 6rem;
+        }
+
         &::before {
             content: '<h1>';
             top: -2.5rem;
@@ -228,24 +232,3 @@
     }
 }
 
-
-
-// MEDIA QUERYS
-
-@include m.portatil {
-    .home {
-        .title {
-            font-size: 5rem;
-            padding-bottom: 0;
-        }
-
-        .letterIcon {
-            width: 5rem !important;
-            top: .5rem !important;
-        }
-    }
-
-    .info {
-        margin-bottom: 5rem;
-    }
-}

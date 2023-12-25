@@ -21,36 +21,30 @@ function SobreMi() {
         depth: 0.8,
         maxSpeed: 0.05,
         weight: true,
-        initial : [0.02, 0.02],
+        initial: [0.02, 0.02],
       }, "tags");
     }
   }, []);
 
   return (
     <div className="skills-charts">
-      <div id="myCanvasContainer">
-        <canvas width={500} height={500} id="myCanvas"></canvas>
+      <div id="myCanvasContainer" className='myCanvasContainer'>
+        <canvas width={500} height={500} id="myCanvas" className='myCanvas'></canvas>
         <ul id="tags">
-        <li><a href="#" target="_blank">HTML</a></li>
-                        <li><a href="#" target="_blank">CSS</a></li>
-                        <li><a href="#" target="_blank">ES5</a></li>
-                        <li><a href="#" target="_blank">TypeScript</a></li>
-                        <li><a href="#" target="_blank">REST</a></li>
-                        <li><a href="#" target="_blank">JSON</a></li>
-                        <li><a href="#" target="_blank">GSAP</a></li>
-                        <li><a href="#" target="_blank">Data Science</a></li>
-                        <li><a href="#" target="_blank">Wordpress</a></li>
-                        <li><a href="#" target="_blank">PHP</a></li>
-                        <li><a href="#" target="_blank">Python</a></li>
-                        <li><a href="#" target="_blank">Node JS</a></li>
-                        <li><a href="#" target="_blank">Git</a></li>
-                        <li><a href="#" target="_blank">_lodash</a></li>
-                        <li><a href="#" target="_blank">SASS</a></li>
-                        <li><a href="#" target="_blank">JQuery</a></li>
-                        <li><a href="#" target="_blank">SQI</a></li>
-                        <li><a href="#" target="_blank">Gulp</a></li>
-                        <li><a href="#" target="_blank">npm</a></li>
-                        <li><a href="#" target="_blank">BEM</a></li>
+          <li><a href="#" target="_blank">HTML</a></li>
+          <li><a href="#" target="_blank">HTML</a></li>
+          <li><a href="#" target="_blank">CSS</a></li>
+          <li><a href="#" target="_blank">SASS</a></li>
+          <li><a href="#" target="_blank">Javascript</a></li>
+          <li><a href="#" target="_blank">TypeScript</a></li>
+          <li><a href="#" target="_blank">npm</a></li>
+          <li><a href="#" target="_blank">JSON</a></li>
+          <li><a href="#" target="_blank">Git</a></li>
+          <li><a href="#" target="_blank">Bootstrap</a></li>
+          <li><a href="#" target="_blank">Tailwind</a></li>
+          <li><a href="#" target="_blank">Figma</a></li>
+          <li><a href="#" target="_blank">Adobe XD</a></li>
+          <li><a href="#" target="_blank">JQuery</a></li>
         </ul>
       </div>
     </div>
