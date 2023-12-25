@@ -1,3 +1,6 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
 .myCanvasContainer {
     display: flex;
     justify-content: center;
@@ -6,5 +9,115 @@
 
     .myCanvas {
         width: 70%;
+    }
+}
+
+.about {
+    padding: 1rem 2rem;
+    margin-bottom: 12rem;
+    position: relative;
+
+    @include m.tablet {
+        margin-bottom: 0;
+    }
+
+    .title {
+        color: v.$color-hover;
+    }
+
+    .skills-charts {
+        width: 40%;
+        margin: 4rem 0;
+    }
+
+    .c-info {
+        width: 50%;
+
+        .info {
+            margin: 1.6rem 0;
+        }
+    }
+
+    .tag-cloud {
+        margin-bottom: 2rem;
+    }
+
+    .btn-cv {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}
+
+
+.main-a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .c-info {
+        width: 50%;
+
+        .info {
+            width: auto;
+            padding: 0;
+            width: 100%;
+            max-width: 45rem;
+
+            &:nth-child(2) {
+                position: relative;
+                &::before {
+                    content: '<p>';
+                    position: absolute;
+                    color: #666565;
+                    font-family: "La Belle Aurore";
+                    font-size: 1.8rem;
+                    top: -4rem;
+                    @include m.tablet {
+                        font-size: 2.2rem;
+                    }
+                }
+            }
+            &:nth-child(4) {
+                position: relative;
+                &::after {
+                    content: '</p>';
+                    position: absolute;
+                    color: #666565;
+                    font-family: "La Belle Aurore";
+                    font-size: 1.8rem;
+                    left: 0;
+                    bottom: -4rem;
+
+                    @include m.tablet {
+                        font-size: 2.2rem;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .tag-end {
+        &::before {
+            bottom: 3rem;
+        }
+
+        &::after {
+            bottom: 0;
+        }
+    }
+
+}
+
+
+.myCanvasContainer {
+    @include m.tablet {
+        width: 100%;
+
+        .myCanvas {
+            width: 100%;
+        }
     }
 }
