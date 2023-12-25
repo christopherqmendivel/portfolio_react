@@ -2,6 +2,19 @@
 @use '../base/mixins' as m;
 
 
+.proyects {
+    .main-a {
+        flex-direction: column;
+
+        .title {
+            @include m.tablet {
+                padding-left: 3rem;
+            }
+        }
+    }
+    
+}
+
 .proyect {
     width: 100%;
     text-align: center;
@@ -15,12 +28,25 @@
 }
 
 
+.section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .card {
     position: relative;
     width: 100%;
     height: 30rem;
     margin: 0.5rem;
-    margin-bottom: 5rem;
+
+    &:last-child {
+        margin-bottom: 3rem;
+    }
+
+    @include m.tablet {
+        width: 35rem;
+    }
 
     .card-img {
         position: absolute;

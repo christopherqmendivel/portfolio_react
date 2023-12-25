@@ -4,18 +4,19 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 
 
-import podcastfm from '../../assets/imgs/podcastfm.jpg';
-import udemy from '../../assets/imgs/udemy.jpg';
+import podcastfmImg from '../../assets/imgs/podcastfm.jpg';
+import udemyImg from '../../assets/imgs/udemy.jpg';
+import weatherImg from '../../assets/imgs/weather.jpg';
 
 const ProyectoCard = () => {
     return (
         <section className='section'>
             
             <div className="card" data-item="css">
-                <img src={podcastfm} className="card-img" alt="Imagen del proyecto PodcastFM" />
+                <img src={podcastfmImg} className="card-img" alt="Imagen del proyecto PodcastFM" />
                 <div className="card-body">
                     <div className="proyecto">
-                        <h4 className="titulo">Udemy</h4>
+                        <h4 className="titulo">PodcastFM</h4>
                         <LinkExternal href="https://podcastfm.netlify.app/" icon={faLink} />
                     </div>
                     <div className="hash-link">
@@ -29,7 +30,7 @@ const ProyectoCard = () => {
             </div>
 
             <div className="card" data-item="css">
-                <img src={udemy} className="card-img" alt="Imagen del proyecto Udemy" />
+                <img src={udemyImg} className="card-img" alt="Imagen del proyecto Udemy" />
                 <div className="card-body">
                     <div className="proyecto">
                         <h4 className="titulo">Udemy</h4>
@@ -42,7 +43,26 @@ const ProyectoCard = () => {
                         </div>
                         <LinkExternal href="https://github.com/christopherqmendivel/udempage" icon={faGithub} />
                     </div>
-                </div>
+                </div> 
+            </div>
+
+            <div className="card" data-item="css">
+                <img src={weatherImg} className="card-img" alt="App Weather" />
+                <div className="card-body">
+                    <div className="proyecto">
+                        <h4 className="titulo">App Weather</h4>
+                        <LinkExternal href="https://appweatherproyect.netlify.app/" icon={faLink} />
+                    </div>
+                    <div className="hash-link">
+                        <div className="hash">
+                            <span className="categoria">#SASS</span>
+                            <span className="categoria">#Bootstrap</span>
+                            <span className="categoria">#Javascript</span>
+
+                        </div>
+                        <LinkExternal href="https://github.com/christopherqmendivel/appweather" icon={faGithub} />
+                    </div>
+                </div> 
             </div>
         </section>
     );

@@ -5,7 +5,7 @@ import ProyectoCard from "../components/Proyects/proyects";
 function Proyectos() {
 
   return (
-    <div className="home about">
+    <div className="home about proyects">
       <span class="tag-init"></span>
 
       <main className="main-a">
