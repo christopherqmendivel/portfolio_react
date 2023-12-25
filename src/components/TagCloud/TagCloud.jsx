@@ -12,13 +12,17 @@ const TagCloud = () => {
 
     if (window.jQuery && window.jQuery.isFunction(window.jQuery.fn.tagcanvas)) {
       window.jQuery("#myCanvas").tagcanvas({
-        textColour: "#a154f8",
+        textColour: "#a35cf5",
         outlineColour: "transparent",
+        textFont : 'Roboto',
         reverse: true,
-        depth: 0.8,
         maxSpeed: 0.05,
+        textHeight: 17,
         weight: true,
+        wheelZoom: false,
         initial: [0.02, 0.02],
+        
+        
       }, "tags");
     }
   }, []);
@@ -29,18 +33,19 @@ const TagCloud = () => {
         <canvas width={500} height={500} id="myCanvas" className='myCanvas'></canvas>
         <ul id="tags">
           <li><a href="#" target="_blank">HTML</a></li>
-          <li><a href="#" target="_blank">HTML</a></li>
           <li><a href="#" target="_blank">CSS</a></li>
           <li><a href="#" target="_blank">SASS</a></li>
           <li><a href="#" target="_blank">Javascript</a></li>
           <li><a href="#" target="_blank">TypeScript</a></li>
-          <li><a href="#" target="_blank">npm</a></li>
+          <li><a href="#" target="_blank">Angular</a></li>
+          <li><a href="#" target="_blank">Npm</a></li>
           <li><a href="#" target="_blank">JSON</a></li>
           <li><a href="#" target="_blank">Git</a></li>
           <li><a href="#" target="_blank">Bootstrap</a></li>
           <li><a href="#" target="_blank">Tailwind</a></li>
           <li><a href="#" target="_blank">Figma</a></li>
           <li><a href="#" target="_blank">Adobe XD</a></li>
+          <li><a href="#" target="_blank">Javascript</a></li>
           <li><a href="#" target="_blank">JQuery</a></li>
         </ul>
       </div>

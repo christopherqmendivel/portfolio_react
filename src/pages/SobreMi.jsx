@@ -29,13 +29,17 @@ function SobreMi() {
           <p className="info">
             Ahora, busco nuevas oportunidades para contribuir y crecer en equipos de desarrollo, participando en proyectos interesantes mientras enfrento nuevos desafíos con entusiasmo.
           </p>
+
+          <div className="c-cv">
+      <a href={cv} class="btn btn-cv" download>Descargar CV</a>
+      </div>
         </div>
 
         <TagCloud className="tag-cloud" />
         <span class="tag-end"></span>
       </main>
 
-
+      
     </div>
 
   );
