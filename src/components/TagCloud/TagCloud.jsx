@@ -18,6 +18,7 @@ const TagCloud = () => {
         reverse: true,
         maxSpeed: 0.05,
         textHeight: 17,
+        noSelect: true,
         weight: true,
         wheelZoom: false,
         initial: [0.02, 0.02],
@@ -32,13 +33,13 @@ const TagCloud = () => {
       <div id="myCanvasContainer" className='myCanvasContainer'>
         <canvas width={500} height={500} id="myCanvas" className='myCanvas'></canvas>
         <ul id="tags">
-          <li><a href="#" target="_blank">HTML</a></li>
+          <li>HTML</li>
           <li><a href="#" target="_blank">CSS</a></li>
           <li><a href="#" target="_blank">SASS</a></li>
           <li><a href="#" target="_blank">Javascript</a></li>
           <li><a href="#" target="_blank">TypeScript</a></li>
           <li><a href="#" target="_blank">Angular</a></li>
-          <li><a href="#" target="_blank">Npm</a></li>
+          <li>Npm</li>
           <li><a href="#" target="_blank">JSON</a></li>
           <li><a href="#" target="_blank">Git</a></li>
           <li><a href="#" target="_blank">Bootstrap</a></li>
