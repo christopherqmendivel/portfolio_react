@@ -4,7 +4,7 @@ import { AnimatePresence } from 'framer-motion';
 
 import Navbar from './components/Navbar/Navbar';
 import Inicio from "./pages/Inicio";
-import SobreMi from './pages/SobreMi';
+import SobreMi from "./pages/SobreMi";
 import Proyectos from "./pages/Proyectos";
 import Contacto from "./pages/Contacto";
 

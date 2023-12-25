@@ -1,77 +1,53 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
-// ICONS 
+import { NavLink as RRNavLink, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
-
-
 
 import Logo from '../Logo/Logo';
 import { HomeIcon, AboutIcon, ProyectIcon, ContactIcon } from '../UI/icons';
 
-
-
 function Navbar() {
+    const location = useLocation();
 
     return (
         <div className='menu'>
-            < Logo />
+            <Logo />
 
             <nav className='nav'>
-                <NavLink to="/" className='link'>
-                    <div className="icon-link">
-                        <HomeIcon className='icon-svg' />
-                        <span className='name-link'>
-                            Inicio
-                        </span>
-                    </div>
-                </NavLink>
-                <NavLink to="/sobre-mi" className='link'>
-                    <div className="icon-link">
-                        <AboutIcon className='icon-svg' />
-                        <span className='name-link'>
-                            Sobre mí
-                        </span>
-                    </div>
-
-                </NavLink>
-                <NavLink to="/proyectos" className='link'>
-                    <div className="icon-link">
-                        <ProyectIcon className="icon-svg" />
-                        <span className='name-link'>
-                            Proyectos
-                        </span>
-                    </div>
-                </NavLink>
-                <NavLink to="/contacto" className='link'>
-                    <div className="icon-link">
-                        <ContactIcon className="icon-svg" />
-                        <span className='name-link'>
-                            Contacto
-                        </span>
-                    </div>
-                </NavLink>
+                <NavLink to="/" icon={<HomeIcon className='icon-svg' />} name="Inicio" />
+                <NavLink to="/sobre-mi" icon={<AboutIcon className='icon-svg' />} name="Sobre mí" />
+                <NavLink to="/proyectos" icon={<ProyectIcon className="icon-svg" />} name="Proyectos" />
+                <NavLink to="/contacto" icon={<ContactIcon className="icon-svg" />} name="Contacto" />
             </nav>
 
             <div className="social-media">
-                <Link to="https://www.linkedin.com/in/christopherquirozmendivel/" target="_blank">
-                    <FontAwesomeIcon icon={faLinkedinIn} className='icon-color' />
-                </Link>
-                <Link to="https://github.com/christopherqmendivel" target="_blank">
-                    <FontAwesomeIcon icon={faGithub} className='icon-color' /> 
-                </Link>
+                <LinkExternal href="https://www.linkedin.com/in/christopherquirozmendivel/" icon={faLinkedinIn} />
+                <LinkExternal href="https://github.com/christopherqmendivel" icon={faGithub} />
             </div>
-
         </div>
+    );
+}
 
+const NavLink = ({ to, icon, name }) => {
+    const location = useLocation();
+    const isActive = location.pathname === to;
+
+    return (
+        <RRNavLink to={to} className={`link ${isActive ? 'active' : ''}`}>
+            <div className={`icon-link ${isActive ? 'active' : ''}`}>
+                {icon}
+                <span className='name-link'>
+                    {name}
+                </span>
+            </div>
+        </RRNavLink>
     );
 };
 
-const NavLink = ({ to, children }) => (
-    <Link to={to} className='link'>
-        {children}
-    </Link>
+const LinkExternal = ({ href, icon }) => (
+    <a href={href} target="_blank" rel="noopener noreferrer" className='link'>
+        <FontAwesomeIcon icon={icon} className='icon-color' />
+    </a>
 );
 
 export default Navbar;

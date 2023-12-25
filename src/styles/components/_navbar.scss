@@ -150,8 +150,13 @@
                 line-height: 4;
             }
 
+
+
             .name-link {
                 font-size: 1.2rem;
+                @include m.tablet {
+                    font-size: 1.5rem;
+                }
             }
 
             .icon-svg {
@@ -168,3 +173,10 @@
     }
 }
 
+.link.active {
+    color: v.$color-hover; /* Cambia este color al que desees */
+}
+
+.link.active svg path{
+    fill: v.$color-hover;
+}

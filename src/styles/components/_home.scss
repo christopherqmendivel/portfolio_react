@@ -26,9 +26,12 @@
             color: #666565;
             font-family: "La Belle Aurore", cursive;
             user-select: none;
-            font-size: 2.2rem;
+            font-size: 2rem;
             position: absolute;
             padding: 1rem 2rem;
+            @include m.tablet {
+                font-size: 2.2rem;
+            }
 
         }
 
@@ -61,14 +64,14 @@
 
         &::before {
             content: '</body>';
-            bottom: 3rem;
+            bottom: 10rem;
             left: 2rem;
 
         }
 
         &::after {
             content: '</html>';
-            bottom: 0;
+            bottom: 7rem;
             left: 0;
         }
     }
@@ -112,6 +115,7 @@
         color: v.$white;
         position: relative;
         padding-bottom: 6rem;
+        font-size: 3.5rem;
 
         &::before {
             content: '<h1>';
@@ -168,14 +172,18 @@
 
         &::before {
             content: "<p class=skill>";
+            font-size: 1.8rem;
             position: absolute;
             top: -4rem;
             color: #666565;
             font-family: "La Belle Aurore", cursive;
             user-select: none;
-            font-size: 2.2rem;
             left: 0;
             font-weight: 400;
+
+            @include m.tablet {
+                font-size: 2.2rem;
+            }
         }
 
         &::after {
@@ -186,8 +194,11 @@
             color: #666565;
             font-family: "La Belle Aurore", cursive;
             user-select: none;
-            font-size: 2.2rem;
+            font-size: 1.8rem;
             font-weight: 400;
+            @include m.tablet {
+                font-size: 2.2rem;
+            }
         }
 
     }
@@ -207,9 +218,13 @@
         color: #666565;
         font-family: "La Belle Aurore", cursive;
         user-select: none;
-        font-size: 2.2rem;
+        font-size: 1.8rem;
         position: absolute;
         font-weight: 400;
+
+        @include m.tablet {
+            font-size: 2.2rem;
+        }
     }
 }
 
