@@ -1,12 +1,19 @@
 import transition from "../animations/transition";
-import renderAnimatedSentence from '../helpers/AnimateLetters';
+import ProyectoCard from "../components/Proyects/proyects";
+
 
 function Proyectos() {
-  const sentence = "Hello Christopher".split("");
 
   return (
-    <div className="proyect">
-      {renderAnimatedSentence(sentence)}
+    <div className="home about">
+      <span class="tag-init"></span>
+
+      <main className="main-a">
+        <h1 className="title">Proyectos</h1>
+
+        <ProyectoCard />
+        <span class="tag-end"></span>
+      </main>
     </div>
   )
 }

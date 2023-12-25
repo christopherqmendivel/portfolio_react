@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 
 // Animates
 import transition from "../animations/transition";

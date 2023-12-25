@@ -1,11 +1,74 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
 
 .proyect {
     width: 100%;
     text-align: center;
     margin-top: 45rem;
+
     span {
         text-align: center;
         display: inline-block;
         font-size: 5rem;
+    }
+}
+
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    margin: 0.5rem;
+    margin-bottom: 5rem;
+
+    .card-img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        max-height: 30rem;
+        object-fit: scale-down;
+    }
+
+    .card-body {
+        position: absolute;
+        background: #090909;
+        color: v.$white;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        width: 100%;
+        flex: 1;
+        bottom: 0;
+        padding: 2rem 3rem;
+        flex-direction: column;
+
+
+        .proyecto {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 1rem;
+
+            .titulo {
+                font-size: 2.4rem;
+            }
+        }
+
+        .hash-link {
+            display: flex;
+            justify-content: space-between;
+
+            .hash {
+                display: flex;
+                gap: .5rem;
+                .categoria {
+                    color: #ababab;
+                    font-size: 1.4rem;
+                }
+            }
+
+        }
+
     }
 }
