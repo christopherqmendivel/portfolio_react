@@ -15,7 +15,7 @@ const TagCloud = () => {
         textColour: "#a35cf5",
         outlineColour: "transparent",
         textFont : 'Roboto',
-        reverse: true,
+        reverse: false,
         maxSpeed: 0.05,
         textHeight: 17,
         noSelect: true,
