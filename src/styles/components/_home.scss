@@ -37,7 +37,6 @@
         position: absolute;
         max-width: 12rem;
         height: 12rem;
-        top: 0;
         right: 0;
         padding-right: 3rem;
 
@@ -49,10 +48,12 @@
             height: auto;
 
         }
+        
 
         .logo-home {
             width: 100%;
             height: 100%;
+            transform: translateY(-17rem);
         }
     }
 
@@ -121,7 +122,7 @@
 
         &::before {
             content: "<p class=skill>";
-            font-size: 1.8rem;
+            font-size: 2rem;
             position: absolute;
             top: -4rem;
             color: #666565;
@@ -143,7 +144,7 @@
             color: #666565;
             font-family: "La Belle Aurore", cursive;
             user-select: none;
-            font-size: 1.8rem;
+            font-size: 2rem;
             font-weight: 400;
             @include m.tablet {
                 font-size: 2.2rem;
@@ -167,12 +168,12 @@
         color: #666565;
         font-family: "La Belle Aurore", cursive;
         user-select: none;
-        font-size: 1.8rem;
+        font-size: 2rem;
         position: absolute;
         font-weight: 400;
 
         @include m.tablet {
-            font-size: 2.2rem;
+            font-size: 2rem;
         }
     }
 }
@@ -187,8 +188,9 @@
         font-size: 2rem;
         position: absolute;
         padding: 1rem 2rem;
+        top: 2rem;
         @include m.tablet {
-            font-size: 2.2rem;
+            font-size: 2rem;
         }
 
     }
@@ -201,7 +203,7 @@
 
     &::after {
         content: '<body>';
-        top: 3rem;
+        top: rem;
         left: 1rem;
 
     }
@@ -214,7 +216,7 @@
         color: #666565;
         font-family: "La Belle Aurore", cursive;
         user-select: none;
-        font-size: 2.2rem;
+        font-size: 2rem;
         position: absolute;
         padding: 0 2rem;
 
@@ -234,3 +236,21 @@
     }
 }
 
+.home {
+    .tag-end {
+        position: relative;
+        width: 100%;
+        height: 30px;
+    }
+}
+
+
+/* MEDIA QUERY IMG HOME */
+
+@media (max-width: 414px) and (min-height: 844px) {
+    .logo-main {
+        .logo-home {
+            transform: translateY(-22rem) !important;
+        }
+    }
+}

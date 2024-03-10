@@ -35,7 +35,7 @@ const TextSpan = ({ children }) => {
           src= {logo} // Ajusta la ruta de la imagen
           alt="Imagen C"
           className='letterIcon'
-          style={{width: '7rem', position: 'relative', top: '1rem'}}
+          style={{width: '6.8rem', position: 'relative', top: '1rem'}}
         />
       ) : (
         children

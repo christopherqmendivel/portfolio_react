@@ -1,10 +1,8 @@
 import transition from "../animations/transition";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-
-import renderAnimatedSentence from '../helpers/AnimateLetters';
-import coder from '../assets/other-assets/coder.svg'
-
+import renderAnimatedSentence from "../helpers/AnimateLetters";
+import coder from "../assets/other-assets/coder.svg";
 
 function Inicio() {
   const hello = "Hola,".split("");
@@ -12,9 +10,7 @@ function Inicio() {
   const skill = "desarrollador web".split("");
 
   return (
-    <div className="home" >
-
-
+    <div className="home">
       <main className="main-h">
         <span className="tag-init"></span>
         <div className="info">
@@ -24,12 +20,9 @@ function Inicio() {
             {renderAnimatedSentence(name)}
             <br />
             {renderAnimatedSentence(skill)}
-
-
           </h1>
 
           <p className="skill-front">Front End Developer - UX Designer</p>
-
 
           <Link to="/contacto" className="btn btnEnviar slide" id="btnEnviar">
             Contáctame
@@ -37,16 +30,12 @@ function Inicio() {
         </div>
 
         <div className="logo-main">
-          <img
-            src={coder}
-            className="logo-home"
-            alt="logo christopher"
-          />
+          <img src={coder} className="logo-home" alt="logo christopher" />
         </div>
-        <span className="tag-end"></span>
       </main>
+      <span className="tag-end"></span>
     </div>
-  )
+  );
 }
 
 export default transition(Inicio);

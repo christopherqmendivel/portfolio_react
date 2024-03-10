@@ -29,10 +29,6 @@
         @include m.tablet {
             margin-top: 0;
         }
-
-        &::before {
-            top: -1.5rem;
-        }
     }
 
     .skills-charts {
