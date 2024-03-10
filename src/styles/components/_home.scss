@@ -40,6 +40,11 @@
         right: 0;
         padding-right: 3rem;
 
+        top: 0;
+        right: 50%;
+        transform: translateX(50%);
+        padding-right: 0;
+
         @include m.tablet {
             width: 30%;
             display: block;
@@ -53,7 +58,6 @@
         .logo-home {
             width: 100%;
             height: 100%;
-            transform: translateY(-17rem);
         }
     }
 
@@ -246,7 +250,7 @@
 
 
 /* MEDIA QUERY IMG HOME */
-
+/*
 @media (max-width: 414px) and (min-height: 844px) {
     .logo-main {
         .logo-home {
@@ -254,3 +258,4 @@
         }
     }
 }
+*/
