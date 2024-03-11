@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 import renderAnimatedSentence from "../helpers/AnimateLetters";
 import coder from "../assets/other-assets/coder.svg";
+import SocialMedia from '../components/SocialMedia/SocialMedia';
+
 
 function Inicio() {
   const hello = "Hola,".split("");
@@ -11,6 +13,7 @@ function Inicio() {
 
   return (
     <div className="home">
+      <SocialMedia />
       <main className="main-h">
         <span className="tag-init"></span>
         <div className="info">

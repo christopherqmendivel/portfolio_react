@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavLink as RRNavLink, useLocation } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import Logo from '../Logo/Logo';
+import logo from '../../assets/other-assets/logo-chrisv2.png';
+import SocialMedia from '../SocialMedia/SocialMedia';
 import { HomeIcon, AboutIcon, ProyectIcon, ContactIcon } from '../UI/icons';
 
 function Navbar() {
@@ -16,19 +16,18 @@ function Navbar() {
             <nav className='nav'>
                 <NavLink to="/" icon={<HomeIcon className='icon-svg' />} name="Inicio" />
                 <NavLink to="/sobre-mi" icon={<AboutIcon className='icon-svg' />} name="Sobre mí" />
+                <NavLink to="/" logo={logo}/>
                 <NavLink to="/proyectos" icon={<ProyectIcon className="icon-svg" />} name="Proyectos" />
                 <NavLink to="/contacto" icon={<ContactIcon className="icon-svg" />} name="Contacto" />
+                
             </nav>
 
-            <div className="social-media">
-                <LinkExternal href="https://www.linkedin.com/in/christopherquirozmendivel/" icon={faLinkedinIn} />
-                <LinkExternal href="https://github.com/christopherqmendivel" icon={faGithub} />
-            </div>
+            <SocialMedia />
         </div>
     );
 }
 
-const NavLink = ({ to, icon, name }) => {
+const NavLink = ({ to, icon, name, logo }) => {
     const location = useLocation();
     const isActive = location.pathname === to;
 
@@ -36,6 +35,7 @@ const NavLink = ({ to, icon, name }) => {
         <RRNavLink to={to} className={`link ${isActive ? 'active' : ''}`}>
             <div className={`icon-link ${isActive ? 'active' : ''}`}>
                 {icon}
+                {logo && <img src={logo} alt="Logo" className="nav_logo_m" />} {/* Renderiza el logo si se proporciona */}
                 <span className='name-link'>
                     {name}
                 </span>
@@ -44,10 +44,6 @@ const NavLink = ({ to, icon, name }) => {
     );
 };
 
-const LinkExternal = ({ href, icon }) => (
-    <a href={href} target="_blank" rel="noopener noreferrer" className='link'>
-        <FontAwesomeIcon icon={icon} className='icon-color' />
-    </a>
-);
+
 
 export default Navbar;

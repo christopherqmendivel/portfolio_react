@@ -16,10 +16,10 @@
         height: 100%;
         justify-content: center;
         align-items: center;
-        
+
     }
 
-    
+
 
     .info {
         width: 100%;
@@ -53,7 +53,7 @@
             height: auto;
 
         }
-        
+
 
         .logo-home {
             width: 100%;
@@ -87,6 +87,7 @@
                 display: block;
                 padding-left: 1rem;
             }
+
             &::before {
                 top: -2rem;
             }
@@ -150,6 +151,7 @@
             user-select: none;
             font-size: 2rem;
             font-weight: 400;
+
             @include m.tablet {
                 font-size: 2.2rem;
             }
@@ -193,6 +195,7 @@
         position: absolute;
         padding: 1rem 2rem;
         top: 2rem;
+
         @include m.tablet {
             font-size: 2rem;
         }
@@ -248,14 +251,23 @@
     }
 }
 
+// SOCIAL MEDIA MOBIL
+.home {
+    .social-media {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        margin-right: 25px;
+        margin-top: 20px;
 
-/* MEDIA QUERY IMG HOME */
-/*
-@media (max-width: 414px) and (min-height: 844px) {
-    .logo-main {
-        .logo-home {
-            transform: translateY(-22rem) !important;
+        .icon-color {
+            path {
+                fill: v.$white;
+            }
         }
     }
+    .logo-main {
+        display: none;
+    }
+    
 }
-*/

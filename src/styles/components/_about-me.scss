@@ -162,3 +162,17 @@
         width: 100%;
     }
 }
+
+
+// FIX STYLES
+.about {
+    .main-a {
+        padding: 0;
+
+        .tag-end {
+            &::before, &::after {
+                padding: 0;
+            }
+        }
+    }
+}
