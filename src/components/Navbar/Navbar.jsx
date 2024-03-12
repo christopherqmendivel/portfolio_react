@@ -16,7 +16,7 @@ function Navbar() {
             <nav className='nav'>
                 <NavLink to="/" icon={<HomeIcon className='icon-svg' />} name="Inicio" />
                 <NavLink to="/sobre-mi" icon={<AboutIcon className='icon-svg' />} name="Sobre mí" />
-                <NavLink to="/" logo={logo}/>
+                <NavLink to="/" logo={logo} className='logo_m' />
                 <NavLink to="/proyectos" icon={<ProyectIcon className="icon-svg" />} name="Proyectos" />
                 <NavLink to="/contacto" icon={<ContactIcon className="icon-svg" />} name="Contacto" />
                 

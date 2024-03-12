@@ -8,12 +8,16 @@ import TagCloud from '../components/TagCloud/TagCloud.jsx';
 
 import cv from '../assets/docs/ChristopherCV.pdf';
 
+import SocialMedia from '../components/SocialMedia/SocialMedia';
+
+
 
 function SobreMi() {
 
 
   return (
     <div className="home about">
+      < SocialMedia />
       <span class="tag-init"></span>
       <main className='main-a'>
         <div className="c-info">

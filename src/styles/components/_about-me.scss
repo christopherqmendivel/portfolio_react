@@ -85,7 +85,7 @@
     .c-info {
         width: 100%;
 
-        @include m.tablet {
+        @include m.desktop {
             width: 50%;
         }
 
@@ -165,14 +165,91 @@
 
 
 // FIX STYLES
+.main-a {
+    width: 100%;
+
+    @include m.tablet {
+        position: relative;
+        width: 74%;
+        margin: 0;
+        margin-left: auto;
+    }
+}
+
 .about {
+
+    .social-media {
+        padding: 0;
+    }
+
+    .tag-init {
+        @include m.tablet {
+            top: 0;
+            right: 0;
+            width: 74%;
+            margin-left: auto;
+        }
+    }
+
     .main-a {
+        flex-wrap: wrap;
         padding: 0;
 
+        @include m.tablet {
+            margin-top: 12rem;
+        }
+
+        @include m.desktop {
+            margin-top: 0;
+        }
+
+
+
         .tag-end {
-            &::before, &::after {
-                padding: 0;
+            bottom: 0;
+
+            @include m.tablet {
+                width: unset;
+                left: 0;
             }
+
+            &::before,
+            &::after {
+                padding: 0;
+
+                @include m.tablet {
+                    padding-left: 20px;
+
+                }
+            }
+        }
+
+        .c-info {
+            @include m.tablet {
+                padding: 0 2rem;
+            }
+
+            .info {
+                height: initial;
+                max-width: unset;
+            }
+        }
+
+        // SKILLS CHARTS - ESFERA
+        .skills-charts {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            @include m.tablet {
+                .myCanvasContainer {
+                    width: 80%;
+                }
+            }
+        }
+
+        @include m.desktop {
+            width: 40%;
         }
     }
 }

@@ -3,11 +3,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAt } from '@fortawesome/free-solid-svg-icons';
 import MapContainer from '../components/Mapa';
 
+import SocialMedia from '../components/SocialMedia/SocialMedia';
+
+
 
 function Contacto() {
 
   return (
     <div className="contact">
+      <SocialMedia />
       <div className="contact-info">
         <h1 className="title">
           <span className="html-tag">

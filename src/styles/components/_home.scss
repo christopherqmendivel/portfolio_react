@@ -10,12 +10,17 @@
     justify-content: center;
     flex-wrap: wrap;
 
+    @include m.tablet {
+        overflow-y: hidden;
+    }
+
     .main-h {
         display: flex;
         width: 100%;
         height: 100%;
         justify-content: center;
         align-items: center;
+        max-height: 80rem;
 
     }
 
@@ -27,6 +32,10 @@
         padding: 0 3rem;
 
         @include m.tablet {
+            width: 100%;
+        }
+
+        @include m.desktop {
             width: 50%;
             height: auto;
         }
@@ -185,6 +194,12 @@
 }
 
 .tag-init {
+    
+    @include m.tablet {
+        position: absolute;
+        top: -11rem;
+        left: 0;
+    }
 
     &::after,
     &::before {
@@ -227,6 +242,7 @@
         position: absolute;
         padding: 0 2rem;
 
+
     }
 
     &::before {
@@ -244,10 +260,22 @@
 }
 
 .home {
+
     .tag-end {
         position: relative;
         width: 100%;
         height: 30px;
+
+        @include m.tablet {
+            position: absolute;
+            width: 74%;
+            bottom: -6rem;
+            right: .2rem;
+        }
+
+        @include m.desktop {
+            width: inherit;
+        }
     }
 }
 
@@ -257,17 +285,35 @@
         display: flex;
         width: 100%;
         justify-content: flex-end;
-        margin-right: 25px;
         margin-top: 20px;
+        padding: 0 2rem;
+
+        @include m.tablet {
+            display: none;
+        }
 
         .icon-color {
             path {
                 fill: v.$white;
             }
         }
+
     }
+
     .logo-main {
         display: none;
     }
-    
+
+}
+
+
+/* FIX STYLES*/
+.main-h {
+    @include m.tablet {
+        position: relative;
+        width: 74% !important;
+        margin: 0;
+        margin-left: auto;
+
+    }
 }

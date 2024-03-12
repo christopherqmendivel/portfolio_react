@@ -19,6 +19,9 @@
         width: 15%;
         min-width: 20rem;
         max-width: 20rem;
+        position: fixed;
+    }
+    @include m.desktop {
         position: unset;
     }
 
@@ -35,10 +38,11 @@
 
     @include m.tablet {
         display: flex;
+
     }
 
     .icon-color {
-        color: v.$gray-text;
+        color: v.$white;
         font-size: 2rem;
         transition: color .5s ease-in-out;
         cursor: pointer;
@@ -105,11 +109,8 @@
         min-height: 50vh;
         width: 100%;
         position: relative;
+        gap: 0;
     }
-
-
-
-
 
 
     .link {
@@ -153,7 +154,6 @@
             }
 
 
-
             .name-link {
                 font-size: 1.2rem;
 
@@ -180,7 +180,6 @@
 
 .link.active {
     color: v.$color-hover;
-    /* Cambia este color al que desees */
 }
 
 .link.active svg path {
@@ -191,4 +190,29 @@
     .nav_logo_m {
         width: 5rem;
     }
+}
+
+/* Oculta el logo en versión movil */
+.nav {
+    .link:nth-child(3) {
+        @include m.tablet {
+            display: none;
+        }
+    }
+    
+    .link {
+        @include m.tablet {
+            width: 80%;
+        }
+    }
+    .icon-link  {
+        .name-link {
+            @include m.tablet {
+                width: 80%;
+                text-align: left;
+                margin-left: 20px;
+            }
+        }
+    }
+
 }

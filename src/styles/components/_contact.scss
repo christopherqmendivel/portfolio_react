@@ -8,6 +8,13 @@
     max-height: 100vh;
     margin: 0 auto;
     flex-wrap: wrap;
+    @include m.tablet {
+        width: calc(100% - 26%);
+        margin: 0;
+        margin-left: auto;
+    }
+
+
 
 
     .contact-info {
@@ -19,10 +26,13 @@
         height: auto;
 
         @include m.tablet {
-            width: 50%;
-            padding: 1rem 4rem;
+            width: 100%;
+            padding: 1rem 2rem;
             height: 100%;
 
+        }
+        @include m.desktop {
+            width: 50%;
         }
 
         .title {
@@ -47,6 +57,9 @@
 .map {
     width: 100%;
     @include m.tablet {
+        width: 100%;
+    }
+    @include m.desktop {
         width: 50%;
     }
     height: 100%;
