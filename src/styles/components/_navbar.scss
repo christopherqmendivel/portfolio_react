@@ -167,8 +167,8 @@
                 height: 3.5rem;
 
                 @include m.desktop {
-                    margin: 0 2rem;
-
+                   width: 48px;
+                   height: 48px;
                 }
 
             }
@@ -192,7 +192,7 @@
     }
 }
 
-/* Oculta el logo en versión movil */
+/* Oculta el logo en versión movil */   
 .nav {
     .link:nth-child(3) {
         @include m.tablet {

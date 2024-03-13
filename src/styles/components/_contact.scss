@@ -13,6 +13,15 @@
         margin: 0;
         margin-left: auto;
     }
+    @include m.desktop {
+        width: 100%;
+    }
+
+    .social-media {
+        @include m.desktop {
+            display: none;        
+        }
+    }
 
 
 

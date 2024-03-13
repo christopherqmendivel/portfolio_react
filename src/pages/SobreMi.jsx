@@ -39,8 +39,8 @@ function SobreMi() {
         </div>
 
         <TagCloud className="tag-cloud" />
-        <span className="tag-end"></span>
       </main>
+      <span className="tag-end"></span>
 
       
     </div>
