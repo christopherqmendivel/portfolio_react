@@ -18,7 +18,7 @@ function SobreMi() {
   return (
     <div className="home about">
       < SocialMedia />
-      <span class="tag-init"></span>
+      <span className="tag-init"></span>
       <main className='main-a'>
         <div className="c-info">
           <h1 className="title">Sobre mí</h1>
@@ -34,12 +34,12 @@ function SobreMi() {
           </p>
 
           <div className="c-cv">
-      <a href={cv} class="btn btn-cv" download>Descargar CV</a>
+      <a href={cv} className="btn btn-cv" download>Descargar CV</a>
       </div>
         </div>
 
         <TagCloud className="tag-cloud" />
-        <span class="tag-end"></span>
+        <span className="tag-end"></span>
       </main>
 
       

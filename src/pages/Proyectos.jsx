@@ -9,13 +9,13 @@ function Proyectos() {
   return (
     <div className="home about proyects">
       <SocialMedia />
-      <span class="tag-init"></span>
+      <span className="tag-init"></span>
 
       <main className="main-a">
         <h1 className="title">Proyectos</h1>
 
         <ProyectoCard />
-        <span class="tag-end"></span>
+        <span className="tag-end"></span>
       </main>
     </div>
   )
