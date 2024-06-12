@@ -27,8 +27,8 @@
       margin-top: 2rem;
       &::before, &::after{
         font-size: 2rem;
-        padding: 0;
-
+        padding: 1rem 2rem;
+        
         @include m.tablet {
           padding-left: 20px;
         }

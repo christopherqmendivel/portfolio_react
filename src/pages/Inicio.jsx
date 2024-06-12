@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 
 import renderAnimatedSentence from "../helpers/AnimateLetters";
 import coder from "../assets/other-assets/coder.svg";
-import SocialMedia from '../components/SocialMedia/SocialMedia';
-
+import SocialMedia from "../components/SocialMedia/SocialMedia";
 
 function Inicio() {
   const hello = "Hola,".split("");
@@ -25,11 +24,19 @@ function Inicio() {
             {renderAnimatedSentence(skill)}
           </h1>
 
-          <p className="skill-front">Front End Developer - UX Designer</p>
+          {/* SKILL - DEV */}
+          <div className="skill-dev">
+            <span className="tag-init-skill"></span>
+            <p className="skill-front">Front End Developer - UX Designer</p>
+            <span className="tag-end-skill"></span>
+          </div>
 
-          <Link to="/contacto" className="btn btnEnviar slide" id="btnEnviar">
-            Contáctame
-          </Link>
+          {/* BUTTON CV */}
+          <div className="button-pdf">
+            <Link to="/contacto" className="btn btnEnviar slide" id="btnEnviar">
+              Contáctame
+            </Link>
+          </div>
         </div>
 
         <div className="logo-main">

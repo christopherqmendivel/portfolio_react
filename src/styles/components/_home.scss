@@ -20,7 +20,6 @@
         height: 100%;
         justify-content: center;
         align-items: center;
-        max-height: 80rem;
 
 
     }
@@ -29,7 +28,6 @@
 
     .info {
         width: 100%;
-        height: 70%;
         padding: 0 3rem;
 
         @include m.tablet {
@@ -128,52 +126,18 @@
         }
     }
 
+    /* SKILL FRONT */
     .skill-front {
         color: v.$gray-text;
-        margin: 5rem 0 2rem 0;
         position: relative;
         padding-left: 1.5rem;
         color: v.$primary-c2;
         font-weight: 600;
-
-        &::before {
-            content: "<p class=skill>";
-            font-size: 2rem;
-            position: absolute;
-            top: -4rem;
-            color: #666565;
-            font-family: "La Belle Aurore", cursive;
-            user-select: none;
-            left: 0;
-            font-weight: 400;
-
-            @include m.tablet {
-                font-size: 2.2rem;
-            }
-        }
-
-        &::after {
-            content: '</p>';
-            position: absolute;
-            bottom: -4rem;
-            left: 0;
-            color: #666565;
-            font-family: "La Belle Aurore", cursive;
-            user-select: none;
-            font-size: 2rem;
-            font-weight: 400;
-
-            @include m.tablet {
-                font-size: 2.2rem;
-            }
-        }
-
     }
 
     .btn {
         padding-left: 5rem;
         padding-right: 5rem;
-        top: 6rem;
     }
 }
 
@@ -183,7 +147,7 @@
     &::after {
         display: block;
         color: #666565;
-        font-family: "La Belle Aurore", cursive;
+        font-family: v.$font-tags;
         user-select: none;
         font-size: 2rem;
         position: absolute;
@@ -196,7 +160,7 @@
 }
 
 .tag-init {
-    
+
     @include m.tablet {
         position: absolute;
         top: -11rem;
@@ -226,13 +190,13 @@
     &::before {
         content: '<html>';
         top: 0;
-        left: 0;
+        left: -1rem;
     }
 
     &::after {
         content: '<body>';
         top: rem;
-        left: 1rem;
+        left: 0;
 
     }
 }
@@ -254,14 +218,14 @@
     &::before {
         content: '</body>';
         bottom: 10rem;
-        left: 2rem;
+        left: 0;
 
     }
 
     &::after {
         content: '</html>';
         bottom: 7rem;
-        left: 0;
+        left: -1rem;
     }
 }
 
@@ -283,16 +247,50 @@
             width: inherit;
         }
     }
+
+    .skill-dev {
+        .tag-init-skill {
+            &::before {
+                content: "<p class=skill>";
+                font-size: 2rem;
+                color: #666565;
+                font-family: v.$font-tags;
+                font-weight: 400;
+            }
+
+        }
+
+        .tag-end-skill {
+            &::after {
+                content: "</p>";
+                font-size: 2rem;
+                color: #666565;
+                font-family: v.$font-tags;
+                font-weight: 400;
+            }
+
+        }
+    }
+
+    /* BUTTON PDF */
+    .button-pdf {
+        min-height: 51px;
+        display: flex;
+        align-items: center;
+        margin: 2rem 0;
+    }
 }
 
 // SOCIAL MEDIA MOBIL
 .home {
     .social-media {
+        position: fixed;
+        top: 0;
         display: flex;
         width: 100%;
         justify-content: flex-end;
-        margin-top: 20px;
-        padding: 0 2rem;
+        padding: 2rem;
+        z-index: 2;
 
         @include m.tablet {
             display: none;
@@ -340,5 +338,20 @@
                 padding: 0;
             }
         }
+    }
+}
+
+
+
+
+
+
+
+/* MEDIA QUERYS*/
+
+@include m.smallTelefono {
+    .main-h {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
     }
 }

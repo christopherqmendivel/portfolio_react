@@ -19,7 +19,6 @@
         width: 15%;
         min-width: 20rem;
         max-width: 20rem;
-        position: fixed;
     }
     @include m.desktop {
         position: unset;
@@ -98,6 +97,10 @@
     gap: 2.5rem;
     background: v.$bg-color-menu;
     padding: 1rem 2rem;
+    
+    @include m.smallTelefono {
+        gap: 1.5rem;
+    }
 
 
     @include m.tablet {
