@@ -163,17 +163,14 @@
 
     @include m.tablet {
         position: absolute;
-        top: -11rem;
+        top: 0;
         left: 0;
     }
 
-    @include m.desktop {
-        top: -5rem;
-    }
 
     &::after,
     &::before {
-        color: #666565;
+        color: #666565 !important;
         font-family: "La Belle Aurore", cursive;
         user-select: none;
         font-size: 2rem;
@@ -195,7 +192,6 @@
 
     &::after {
         content: '<body>';
-        top: rem;
         left: 0;
 
     }

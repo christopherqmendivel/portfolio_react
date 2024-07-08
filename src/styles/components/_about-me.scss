@@ -42,6 +42,7 @@
 
     .c-info {
         width: 50%;
+        
 
         .info {
             margin: 1.6rem 0;
@@ -84,6 +85,9 @@
 
     .c-info {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         @include m.desktop {
             width: 50%;

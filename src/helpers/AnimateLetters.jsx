@@ -1,4 +1,4 @@
-import TextSpan from "../animations/textSpan";
+import TextSpan from "../animations/TextSpan";
 
 
 const renderAnimatedSentence = (sentence, replacements = {}) => {

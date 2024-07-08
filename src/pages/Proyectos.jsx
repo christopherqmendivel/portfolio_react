@@ -15,8 +15,8 @@ function Proyectos() {
         <h1 className="title">Proyectos</h1>
 
         <ProyectoCard />
-        <span className="tag-end"></span>
       </main>
+      <span className="tag-end"></span>
     </div>
   )
 }
