@@ -5,7 +5,10 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 import podcastfmImg from "../../assets/imgs/podcastfm.jpg";
 import udemyImg from "../../assets/imgs/udemy.jpg";
-import weatherImg from "../../assets/imgs/weather.jpg";
+import interactive_card from "../../assets/imgs/interactive_card.jpg";
+import bootcamp_testimonials from "../../assets/imgs/desktop-design.jpg";
+
+
 
 const ProyectoCard = () => {
   return (
@@ -63,26 +66,49 @@ const ProyectoCard = () => {
         </div>
       </div>
 
-      <div className="card" data-item="css">
+      <div className="card" data-item="angular">
         <div className="img">
-          <img src={weatherImg} className="card-img" alt="App Weather" />
+          <img src={interactive_card} className="card-img" alt="App Weather" />
         </div>
         <div className="card-body">
           <div className="proyecto">
-            <h4 className="titulo">App Weather</h4>
+            <h4 className="titulo">Interactive card details </h4>
             <LinkExternal
-              href="https://appweatherproyect.netlify.app/"
+              href="https://interactive-card-chris.netlify.app/"
               icon={faLink}
             />
           </div>
           <div className="hash-link">
             <div className="hash">
-              <span className="categoria">#SASS</span>
-              <span className="categoria">#Bootstrap</span>
-              <span className="categoria">#Javascript</span>
+              <span className="categoria">#Angular</span>
             </div>
             <LinkExternal
-              href="https://github.com/christopherqmendivel/appweather"
+              href="https://github.com/christopherqmendivel/card-interactive"
+              icon={faGithub}
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="card" data-item="angular">
+        <div className="img">
+          <img src={bootcamp_testimonials} className="card-img" alt="App Weather" />
+        </div>
+        <div className="card-body">
+          <div className="proyecto">
+            <h4 className="titulo">Coding bootcamp</h4>
+            <LinkExternal
+              href="https://coding-bootcamp-testimonials-f.netlify.app/"
+              icon={faLink}
+            />
+          </div>
+          <div className="hash-link">
+            <div className="hash">
+              <span className="categoria">#Angular</span>
+              <span className="categoria">#Bootstrap</span>
+            </div>
+            <LinkExternal
+              href="https://github.com/christopherqmendivel/Coding-bootcamp-testimonials-slider"
               icon={faGithub}
             />
           </div>
